@@ -1,0 +1,10 @@
+<div class="task">
+	<span class="editable" name="category"><%= data.category %></span>
+	<span class="editable" name="label"><%= data.label %></span>
+	<strong>start:</strong> <span class="editable time" name="start"><%= data.startLabel %></span>
+	<strong>end:</strong> <span class="editable time" name="end"><%= data.endLabel %></span>
+	<% if (!data.end) { %>
+		<button class="stop">stop</button>
+	<% } %>
+	<strong>duration:</strong> <%= data.durationLabel %>
+</div>
